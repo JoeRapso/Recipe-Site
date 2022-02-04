@@ -1,15 +1,27 @@
-import React from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Header from "../Components/Header";
 import { Data } from "../data";
 import {useParams, Outlet, Link} from 'react-router-dom'
+import {Context} from "../Context"
+
 
 
 function RecipeOverview(){
+    const [isDisabled, setDisabled] = useState(false)
+
+    const {favouriteRec, recInBook} = useContext(Context)
+
     let params = useParams()
 
     const item = Data.find(
         item => params.country === item.country
         )
+    
+    function btnDisable(id){
+        if (recInBook.some(item => item.name === id) === true){
+            return true
+        } else return false
+    } 
 
     const items = item.recipes.map(item =>(
         <div class="col">
@@ -25,12 +37,16 @@ function RecipeOverview(){
                     <div class="btn-group col-6 mx-auto">
                      <Link  to={`/${params.country}/${item.name}`} class="btn btn-sm btn-outline-secondary">See More</Link>
                     </div>
+                    <div class="btn-group col-6 mx-auto">
+                        <button disabled={btnDisable(item.name)} style={{marginLeft: "2px"}} type="button" class="btn btn-outline-warning btn-sm" onClick={() => favouriteRec(item)}>Add to Book</button>
+                    </div>
                 </div>
                 </div>
             </div>
         </div>
     ))
-    console.log(item)
+
+
     return(
         <div>
             <section class="py-5 text-center container">
