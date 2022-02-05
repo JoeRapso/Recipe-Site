@@ -7,8 +7,6 @@ import {Context} from "../Context"
 
 
 function RecipeOverview(){
-    const [isDisabled, setDisabled] = useState(false)
-
     const {favouriteRec, recInBook} = useContext(Context)
 
     let params = useParams()
