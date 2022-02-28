@@ -2,7 +2,7 @@ export const Data = [
     {
         id: 1,
         country: "Greece",
-        description: "Greek cooking by and large is a simple cuisine, a cuisine whose basic tenet is that food should be served as close to its natural state as possible",
+        description: "Greek cooking by and large is a simple cuisine the food is served as close to its natural state as possible",
         img: "https://cdn.pixabay.com/photo/2016/06/18/11/45/feta-1464873_960_720.jpg",
         recipes: [{
             id: 1,
@@ -29,7 +29,7 @@ export const Data = [
     {
         id: 2,
         country: "Italy",
-        description: "Italian cuisine is a true culinary experience it has a great melding of flavors, aromas, colors and textures.",
+        description: "Italian cuisine is a true culinary experience it has a great melding of flavors, aromas, colors and textures",
         img: "https://cdn.pixabay.com/photo/2017/10/02/22/24/pizza-2810589_960_720.jpg",
         recipes: [{
             id: 1,
@@ -85,7 +85,7 @@ export const Data = [
     {
         id: 4,
         country: "Turkish",
-        description: "Turkish cuisine is largely the heritage of Ottoman cuisine, which can be described as a fusion and refinement of Mediterranean, Balkan, Middle Eastern, Central Asian, Eastern European, Armenian, and Georgian cuisines",
+        description: "Turkish cuisine is largely the heritage of Ottoman cuisine, which is a fusion of many different cuisines",
         img: "https://cdn.pixabay.com/photo/2021/05/04/10/30/food-6228220_960_720.jpg",
         recipes: [{
             id: 1,
@@ -112,7 +112,7 @@ export const Data = [
     {
         id: 5,
         country: "Indian",
-        description: "The cuisine of India is one of the world's most diverse cuisines, characterized by its sophisticated and subtle use of the many spices, vegetables, grains and fruits grown across India",
+        description: "The cuisine of India is one of the world's most diverse and unique cuisines",
         img: "https://cdn.pixabay.com/photo/2018/12/04/16/49/korma-3856046_960_720.jpg",
         recipes: [{
             id: 1,
@@ -139,7 +139,7 @@ export const Data = [
     {
         id: 6,
         country: "American",
-        description: "Food from the United States is much more than hotdogs, burgers and fries; there is a fantastic range of classic dishes from delicate crab cakes to the more hearty fare of the Deep South. Native cooking traditions, and those brought by early settlers and waves of immigration since, have developed a sophisticated cuisine that is distinctly “American”",
+        description: "Food from the United States is much more than hotdogs, burgers and fries",
         img: "https://cdn.pixabay.com/photo/2019/10/30/14/20/hotdog-4589626_960_720.jpg",
         recipes: [{
             id: 1,
@@ -166,7 +166,7 @@ export const Data = [
     {
         id: 7,
         country: "Mexican",
-        description: "",
+        description: "Mexican cuisine is a complex and ancient cuisine developed over thousands of years",
         img: "https://cdn.pixabay.com/photo/2021/08/12/19/10/quesadilla-6541567_960_720.jpg",
         recipes: [{
             id: 1,
@@ -193,7 +193,7 @@ export const Data = [
     {
         id: 8,
         country: "Chinese",
-        description: "Chinese cuisine, like Chinese philosophy, is organized along Daoist principles of opposition and change: hot is balanced by cold, spicy by mild, fresh by cured",
+        description: "Chinese cuisine, like Chinese philosophy, is organized along principles of opposition and change",
         img: "https://cdn.pixabay.com/photo/2015/07/29/18/29/crayfish-866400_960_720.jpg",
         recipes: [{
             id: 1,
@@ -220,7 +220,7 @@ export const Data = [
     {
         id: 9,
         country: "African",
-        description: "African foods are bountiful and diverse and are based around ingredients and spices that are natural",
+        description: "African foods are bountiful and diverse and are based around ingredients that are natural",
         img: "https://cdn.pixabay.com/photo/2021/10/10/17/57/african-cuisine-6697867_960_720.jpg",
         recipes: [{
             id: 1,

@@ -9,7 +9,7 @@ function DownloadPage(){
         <li class="list-group-item d-flex justify-content-between align-items-center">
           {item.name}
         <button type="button" class="btn btn-danger btn-sm rounded-pill badge" onClick={() => removeRecipe(item.name)}>Remove</button>
-      </li>
+        </li>
   ))
     
     function download(){
@@ -30,11 +30,15 @@ function DownloadPage(){
     console.log(recInBook)
 
     return(
-        <div>
-            <ul class="list-group">
-                {items}
-            </ul>
-            <button onClick={() => download()}>hjhjh</button>
+        <div class="container" style={{height: "100vh"}}>
+            {recInBook.length > 0 ? 
+                <ul class="list-group" style={{paddingTop: "5px"}}>
+                    {items}
+                <div class="d-grid gap-2 col-4 mx-auto">
+                    <button class="btn btn-warning" type="button" style={{paddingTop: "5px"}} onClick={() => download()}>Download now</button>
+                </div>
+                </ul> : <h2>You have added no recipes. Add some to be able to download.</h2>
+            }
         </div>
     )
 }

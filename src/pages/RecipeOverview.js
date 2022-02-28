@@ -1,7 +1,6 @@
-import React, {useContext, useEffect, useState} from "react";
-import Header from "../Components/Header";
+import React, {useContext} from "react";
 import { Data } from "../data";
-import {useParams, Outlet, Link} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
 import {Context} from "../Context"
 
 
